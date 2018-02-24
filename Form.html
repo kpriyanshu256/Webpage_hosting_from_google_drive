@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Treasure Hunt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="icon" href="logo.png">
+    <?!= include('Design'); ?>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<base target="_top">
+    
+</head>
+<body>
+	<nav class= "navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-nav-button" aria-expanded="false" aria-controls="navbar">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+				<img src="https://i.imgur.com/zYSZuyn.png" id="con-icon"alt="C"  class="navbar-brand"/><a href="https://www.concetto.tech" class="navbar-brand">ONCETTO'18</a>
+			</div>
+			<div class="collapse navbar-collapse" id="my-nav-button">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" data-toggle="modal" data-target="#about">About</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#help">Help</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div id="help" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-md">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h2>Help</h2>
+	      </div>
+	      <div class="modal-body">
+				<ul>
+					<li>
+						A team can consist of maximum 3 members. Each team will be provided with a mobile application, Aurasma which is compatible with both Android and IOS devices.
+					</li>
+					<li>
+						Team will be provided with first clue with which they have to look for the object. 
+					</li>
+					<li>
+						They'll have to point their camera towards the guessed answer. If they are right, a quiz screen will pop up containing a logical puzzle, solving which will give the team clue about the next object. </li>
+					<li>
+						Fastest team to collect all clues wins the game.
+					</li>
+				</ul>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+	
+	<div id="about" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-sm">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h2>About ARTH</h2>
+	      </div>
+	      <div class="modal-body">
+			<p>
+				You would have heard of traditional treasure hunt in which players have to collect clues and reach to the final treasure. What if we involve existing advance technology into the old game and make it even cool? Our event aims the same. 
+				Heard of Augmented Reality? No? Still you would have heard of Pokemon Go. Unlike virtual reality, which creates a totally artificial environment, augmented reality uses the existing environment and overlays new information on top of it.
+			</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<div id="contact" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-sm">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h2>Contact Details</h2>
+	      </div>
+	      <div class="modal-body">
+			<ul>
+				<li>Priyanshu Kumar (+91-9128784355)</li>
+				<li>Aadarsh Singh (+91-7007151296)</li>
+			</ul>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div id="content">
+					<h1>Augmented Reality: Treasure Hunt</h1>
+					<h2>Press the button below to generate a question.</h2><hr>
+					<button class="btn btn-danger btn-lg" onclick="act()"><span class="glyphicon glyphicon-share"></span>Get Question</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<?!= include('Check'); ?>
+
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+  
+  
+</html>
