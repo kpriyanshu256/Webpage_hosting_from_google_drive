@@ -11,3 +11,11 @@ Steps:
 2. Open the relevant Google link and click start scripting.
 3. Code.gs file is already created.
 4. Create the other files from File menu.
+5. After completing the webpage, click on Publish menu.
+6. Select Deploy as Web-App
+7. Name the project.
+8. The url of the webpage will be displayed.
+9. Assign version number, make the webpage public or private.
+10. Click Update.
+
+Your webpage is now hosted from your drive!
